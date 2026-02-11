@@ -64,7 +64,7 @@ bool LinkedList<T>::remove(const T& value)
 
     //general case 
     Node* current = head.get();
-    while(current ->next  && current)
+    while(current && current ->next)
     {
         if(current -> next -> data == value)
         {
